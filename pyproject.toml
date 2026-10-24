@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llmseries"
+version = "0.1.0"
+description = "19 language-model architectures at ~10M parameters under one controlled protocol"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["numpy", "tokenizers", "datasets", "matplotlib"]  # install PyTorch (>=2.1) separately
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["llmseries*"]

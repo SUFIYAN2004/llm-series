@@ -1,0 +1,6 @@
+# PyTorch >= 2.1 with CUDA: preinstalled on Colab/Kaggle, otherwise see https://pytorch.org
+numpy
+tokenizers
+datasets
+matplotlib
+pytest
